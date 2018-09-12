@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 export default () => (
   <div>
-    <p>Hi, I'm Harkanwal.</p>
+    <h5>Hi, I'm Harkanwal.</h5>
     <p>I develop, design and teach data visualisation.</p>
     <p>This is my personal website.</p>
     <p>
