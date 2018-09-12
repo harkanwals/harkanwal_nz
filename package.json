@@ -1,6 +1,8 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "harkanwal_nz",
+  "description": "Personal website for Harkanwal",
+  "version": "0.0.1",
+  "author": "Harkanwal Singh<harkanwal@elementsdata.studio>",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
@@ -8,12 +10,22 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.7.1",
     "gatsby": "next",
+    "gatsby-plugin-page-transitions": "^1.0.7",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-styled-components": "^2.0.11",
     "gatsby-plugin-typography": "^1.7.19",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0",
     "react-typography": "^0.16.13",
+    "styled-components": "^3.4.6",
     "typography": "^0.16.17",
     "typography-theme-twin-peaks": "^0.15.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harkanwals/harkanwal_nz"
   }
 }
