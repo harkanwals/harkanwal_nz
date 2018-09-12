@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Helmet from "react-helmet";
 import {Link} from "gatsby";
 
-import "./layout.css";
 
 const TemplateWrapper = styled.div`
   margin: 0 auto;
