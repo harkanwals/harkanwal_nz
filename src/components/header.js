@@ -14,6 +14,10 @@ const MainNav = styled.nav`
   flex-directon: row;
   justify-content: space-between;
   width: 90%;
+  @media(min-width:1080px) {
+    width: 60%;
+    margin-left: 20%;
+  }
   ul {
     list-style: none;
     display: flex;
