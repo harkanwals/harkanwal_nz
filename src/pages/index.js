@@ -35,6 +35,9 @@ const TypewriterWrapper = styled.div`
   font-size: 1.7rem;
   color: orange;
   margin-bottom: 20px;
+  @media(max-width: 500px){
+    font-size: 1.2rem;
+  }
 `;
 
 const NameText = styled.div`
