@@ -4,44 +4,35 @@ import { graphql } from "gatsby";
 import styled from "styled-components";
 import { Typewriter } from "../components/typewriter";
 
-import "./index.css"
+import Showcase from "../components/showcase";
 
 const NameWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
+  font-size: 2.3rem;
+  font-family: 'Montserrat';
+  margin-bottom: 20px;
 `;
 
 const TypistWrapper = styled.div`
-  color: red;
+  font-size: 1.9rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+`;
+
+const TypewriterWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+  color: orange;
+  margin-bottom: 20px;
 `;
 
 const NameText = styled.div`
   p {
     font-size: 2.5rem;
-  }
-`;
-
-const ShowcaseWrapper = styled.div`
-  display: flex;
-  flex-flow: row no-wrap;
-  border: dashed pink;
-  @media (max-width: 768px) {
-    flex-flow: row wrap;
-  }
-`;
-
-const FirstShowWrapper = styled.div`
-  border: dashed red;
-  flex: 1;
-  width: 100%;
-  margin-right: 10px;
-  &;last-child {
-    margin-right: 0;
-  } 
-  @media (max-width: 768px) {
-    flex: 1 1 auto;
-    margin-bottom: 10px;
   }
 `;
 
@@ -56,9 +47,12 @@ export default ({ data }) => (
   <Layout>
     <div>
       <NameWrapper>
-        <NameText>Harkanwal</NameText> 
+        <NameText>Kia ora, I'm Harkanwal</NameText> 
       </NameWrapper>
-        <TypistWrapper> I do data 
+        <TypistWrapper> 
+            I do data  
+            </TypistWrapper>
+          <TypewriterWrapper>
           <Typewriter
             className="title-desc"
             texts={[
@@ -69,17 +63,10 @@ export default ({ data }) => (
               "dreaming."
             ]}
           />
-        </TypistWrapper>
+          </TypewriterWrapper>
+       
   
-      <ShowcaseWrapper>
-        <FirstShowWrapper>
-          Something good goes here. Extra. Something good goes here. Extra
-          Something good goes here. Extra Something good goes here. Extra
-          Something good goes here. Extra. Something good goes here. Extra
-          Something good goes here. Extra Something good goes here. Extra
-        </FirstShowWrapper>
-        <FirstShowWrapper>Wait. Wait.</FirstShowWrapper>
-      </ShowcaseWrapper>
+       <Showcase />
       <ImageWrapper>Oh yeah</ImageWrapper>
     </div>
   </Layout>
