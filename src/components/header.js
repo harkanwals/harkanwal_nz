@@ -14,8 +14,6 @@ const MainNav = styled.nav`
   flex-directon: row;
   justify-content: space-between;
   width: 90%;
-  margin-left: 0%;
-  transform:rotate(-2deg);
   ul {
     list-style: none;
     display: flex;
@@ -40,13 +38,24 @@ const HeaderContainer = styled.div`
   margin: 0 auto;
   padding: 1.45rem 1.0875rem;
   z-index: 2;
-  width:110%;
-  margin-top: -1.5%;
-  left:-5%;
-  transform:rotate(2deg);
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   flex-direction: row;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 6vw)
+  );
+  @media(min-width: 1080px){
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      0 calc(100% - 3vw)
+    );
+  }
 `;
 
 class Header extends React.Component {

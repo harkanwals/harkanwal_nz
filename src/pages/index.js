@@ -13,6 +13,10 @@ const NameWrapper = styled.div`
   font-size: 2.3rem;
   font-family: 'Montserrat';
   margin-bottom: 20px;
+  margin-top: 30px;
+  @media (max-width: 500px) {
+    font-size: 1.3rem;
+  }
 `;
 
 const TypistWrapper = styled.div`
@@ -20,6 +24,9 @@ const TypistWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 5px;
+  @media(max-width: 500px){
+    font-size: 1.2rem;
+  }
 `;
 
 const TypewriterWrapper = styled.div`
