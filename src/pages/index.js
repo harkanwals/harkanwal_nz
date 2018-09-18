@@ -53,7 +53,6 @@ const ImageWrapper = styled.div`
 `;
 
 export default ({ data }) => (
-
   <Layout>
     <div>
       <NameWrapper>
@@ -72,9 +71,12 @@ export default ({ data }) => (
           ]}
         />
       </TypewriterWrapper>
-
-      <Showcase showOneImage={data.crimeSmall.childImageSharp} showTwoImage={data.allBlacks.childImageSharp} 
-        showThreeImage={data.budget.childImageSharp} showFourImage={data.election.childImageSharp} />
+      <Showcase
+        showOneImage={data.crimeSmall.childImageSharp}
+        showTwoImage={data.allBlacks.childImageSharp}
+        showThreeImage={data.budget.childImageSharp}
+        showFourImage={data.election.childImageSharp}
+      />
       <ImageWrapper>Oh yeah</ImageWrapper>
     </div>
   </Layout>
@@ -95,33 +97,33 @@ export const query = graphql`
         }
       }
     }
-    crimeSmall: file(relativePath: {regex: "/crime.jpg/"}) {
-     childImageSharp {
-        fluid(maxWidth:700, maxHeight: 450) {
-          ...GatsbyImageSharpFluid
+    crimeSmall: file(relativePath: { regex: "/crime.jpg/" }) {
+      childImageSharp {
+        fluid(maxWidth: 700, maxHeight: 450) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
-  allBlacks: file(relativePath: {regex: "/allblacks.jpg/"}) {
-    childImageSharp {
-       fluid(maxWidth:700, maxHeight: 450) {
-         ...GatsbyImageSharpFluid
-       }
-     }
-   }
-   budget: file(relativePath: {regex: "/budget.jpg/"}) {
-    childImageSharp {
-       fluid(maxWidth:700, maxHeight: 450) {
-         ...GatsbyImageSharpFluid
-       }
-     }
-   }
-   election: file(relativePath: {regex: "/election.jpg/"}) {
-    childImageSharp {
-       fluid(maxWidth:700, maxHeight: 450) {
-         ...GatsbyImageSharpFluid
-       }
-     }
-   }
- }
+    allBlacks: file(relativePath: { regex: "/allblacks.jpg/" }) {
+      childImageSharp {
+        fluid(maxWidth: 700, maxHeight: 450) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    budget: file(relativePath: { regex: "/budget.jpg/" }) {
+      childImageSharp {
+        fluid(maxWidth: 700, maxHeight: 450) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    election: file(relativePath: { regex: "/election.jpg/" }) {
+      childImageSharp {
+        fluid(maxWidth: 700, maxHeight: 450) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
 `;

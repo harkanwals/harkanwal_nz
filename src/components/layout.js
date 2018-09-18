@@ -5,14 +5,12 @@ import Helmet from "react-helmet";
 import Header from "./header";
 import Footer from "./footer";
 
-import "./layout.css";
 
 const TemplateWrapper = styled.div`
   display: flex;
   margin-top: 5%;
   align-items: flex-start;
   justify-content: center;
-  width: 100%;
 `;
 
 const Wrapper = styled.div`
