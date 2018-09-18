@@ -11,9 +11,8 @@ const NameWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   font-size: 2.3rem;
-  font-family: 'Montserrat';
-  margin-bottom: 20px;
-  margin-top: 30px;
+  font-family: "Montserrat";
+  margin-bottom: 3%;
   @media (max-width: 500px) {
     font-size: 1.3rem;
   }
@@ -24,7 +23,7 @@ const TypistWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 5px;
-  @media(max-width: 500px){
+  @media (max-width: 500px) {
     font-size: 1.2rem;
   }
 `;
@@ -35,7 +34,7 @@ const TypewriterWrapper = styled.div`
   font-size: 1.7rem;
   color: orange;
   margin-bottom: 20px;
-  @media(max-width: 500px){
+  @media (max-width: 500px) {
     font-size: 1.2rem;
   }
 `;
@@ -54,29 +53,28 @@ const ImageWrapper = styled.div`
 `;
 
 export default ({ data }) => (
+
   <Layout>
     <div>
       <NameWrapper>
-        <NameText>Kia ora, I'm Harkanwal</NameText> 
+        <NameText>Kia ora, I'm Harkanwal</NameText>
       </NameWrapper>
-        <TypistWrapper> 
-            I do data  
-            </TypistWrapper>
-          <TypewriterWrapper>
-          <Typewriter
-            className="title-desc"
-            texts={[
-              "analysis.",
-              "visualisation.",
-              "journalism.",
-              "training.",
-              "dreaming."
-            ]}
-          />
-          </TypewriterWrapper>
-       
-  
-       <Showcase />
+      <TypistWrapper>I do data</TypistWrapper>
+      <TypewriterWrapper>
+        <Typewriter
+          className="title-desc"
+          texts={[
+            "training.",
+            "analysis.",
+            "visualisation.",
+            "journalism.",
+            "dreaming."
+          ]}
+        />
+      </TypewriterWrapper>
+
+      <Showcase showOneImage={data.crimeSmall.childImageSharp} showTwoImage={data.allBlacks.childImageSharp} 
+        showThreeImage={data.budget.childImageSharp} showFourImage={data.election.childImageSharp} />
       <ImageWrapper>Oh yeah</ImageWrapper>
     </div>
   </Layout>
@@ -97,5 +95,33 @@ export const query = graphql`
         }
       }
     }
-  }
+    crimeSmall: file(relativePath: {regex: "/crime.jpg/"}) {
+     childImageSharp {
+        fluid(maxWidth:700, maxHeight: 450) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  allBlacks: file(relativePath: {regex: "/allblacks.jpg/"}) {
+    childImageSharp {
+       fluid(maxWidth:700, maxHeight: 450) {
+         ...GatsbyImageSharpFluid
+       }
+     }
+   }
+   budget: file(relativePath: {regex: "/budget.jpg/"}) {
+    childImageSharp {
+       fluid(maxWidth:700, maxHeight: 450) {
+         ...GatsbyImageSharpFluid
+       }
+     }
+   }
+   election: file(relativePath: {regex: "/election.jpg/"}) {
+    childImageSharp {
+       fluid(maxWidth:700, maxHeight: 450) {
+         ...GatsbyImageSharpFluid
+       }
+     }
+   }
+ }
 `;

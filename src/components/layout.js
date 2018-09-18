@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Helmet from "react-helmet";
-import { Link } from "gatsby";
 
 import Header from "./header";
 import Footer from "./footer";
@@ -9,19 +8,17 @@ import Footer from "./footer";
 import "./layout.css";
 
 const TemplateWrapper = styled.div`
-  margin: 0 auto;
   display: flex;
-  flex-flow: row wrap;
+  margin-top: 5%;
   align-items: flex-start;
+  justify-content: center;
   width: 100%;
 `;
 
 const Wrapper = styled.div`
-  margin-bottom: 1.45em;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   a {
     text-shadow: none;
     background-image: none;

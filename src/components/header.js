@@ -37,8 +37,8 @@ const MainNav = styled.nav`
   }
 `;
 const HeaderContainer = styled.div`
-  background: #ffca00;
-  opacity: 0.8;
+  background: #00c8b6;
+  opacity: 0.7;
   margin: 0 auto;
   padding: 1.45rem 1.0875rem;
   z-index: 2;
@@ -57,7 +57,7 @@ const HeaderContainer = styled.div`
       0 0,
       100% 0,
       100% 100%,
-      0 calc(100% - 3vw)
+      0 calc(100% - 2vw)
     );
   }
 `;
