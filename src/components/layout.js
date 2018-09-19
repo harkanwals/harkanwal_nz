@@ -9,8 +9,8 @@ import Footer from "./footer";
 const TemplateWrapper = styled.div`
   display: flex;
   margin-top: 5%;
-  align-items: flex-start;
   justify-content: center;
+  flex: row wrap;
 `;
 
 const Wrapper = styled.div`
