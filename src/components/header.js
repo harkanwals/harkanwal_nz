@@ -6,6 +6,11 @@ const MainH = styled.p`
   display: flex;
   justify-content: flex-start;
   margin-left: 10%;
+  a {
+    color: black;
+    text-decoration: none;
+  
+  }
 `;
 
 const MainNav = styled.nav`
@@ -14,7 +19,7 @@ const MainNav = styled.nav`
   flex-directon: row;
   justify-content: space-between;
   width: 90%;
-  @media(min-width:1080px) {
+  @media (min-width: 1080px) {
     width: 60%;
     margin-left: 20%;
   }
@@ -30,7 +35,7 @@ const MainNav = styled.nav`
         text-decoration: none;
         color: black;
         &:hover {
-          border-bottom: 2px solid red;
+          border-bottom: 2px solid gray;
         }
       }
     }
@@ -46,43 +51,33 @@ const HeaderContainer = styled.div`
   flex-wrap: wrap;
   width: 100%;
   flex-direction: row;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    0 calc(100% - 6vw)
-  );
-  @media(min-width: 1080px){
-    clip-path: polygon(
-      0 0,
-      100% 0,
-      100% 100%,
-      0 calc(100% - 2vw)
-    );
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
+  @media (min-width: 1080px) {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw));
   }
 `;
 
 class Header extends React.Component {
   render() {
     return (
-        <HeaderContainer>
-          <MainNav>
-            <MainH>
-              <Link to="/">Home</Link>
-            </MainH>
-            <ul>
-              <li>
-                <Link to="/work">Work</Link>
-              </li>
-              <li>
-                <Link to="/speaking">Speaking</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-            </ul>
-          </MainNav>
-        </HeaderContainer>
+      <HeaderContainer>
+        <MainNav>
+          <MainH>
+            <Link to="/">Home</Link>
+          </MainH>
+          <ul>
+            <li>
+              <Link to="/work">Work</Link>
+            </li>
+            <li>
+              <Link to="/speaking">Speaking</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+          </ul>
+        </MainNav>
+      </HeaderContainer>
     );
   }
 }

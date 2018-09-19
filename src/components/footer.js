@@ -23,19 +23,24 @@ const ContactContainer = styled.div`
   margin-top: 3%;
   display: flex;
   flex: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  @media(max-width: 768px) {
+    justify-content: flex-end;
+  }
 `
 
 const MailInfo = styled.div`
   display: flex;
   justify-content: flex-start;
   margin-left: 3%;
-  
   a {
     font-size: 1rem;
     font-style: oblique 40deg;
     color: black;
     text-decoration: none;
+  }
+  @media(max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -48,6 +53,7 @@ const ContactInfo = styled.div`
     color: black;
     text-decoration: none;
   }
+  
 `;
 
 const TwitterIcon = styled(FaTwitter)`
