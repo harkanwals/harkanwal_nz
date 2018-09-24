@@ -42,11 +42,6 @@ const NameText = styled.div`
   font-size: 2.5rem;
 `;
 
-const ElementsText = styled.div`
-  margin-top: -30px;
-  font-size: 1.3rem;
-`;
-
 const ImageWrapper = styled.div`
   display: flex;
   flex: row;
@@ -59,9 +54,6 @@ export default ({ data }) => (
     <div>
       <NameWrapper>
         <NameText>Kia ora, I'm Harkanwal,</NameText>
-      </NameWrapper>
-      <NameWrapper>
-        <ElementsText>co-founder of Elements DataVis Studio.</ElementsText>
       </NameWrapper>
       <TypistWrapper>I do data</TypistWrapper>
       <TypewriterWrapper>
