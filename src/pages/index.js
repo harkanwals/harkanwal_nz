@@ -10,7 +10,6 @@ const NameWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 2.3rem;
   font-family: "Montserrat";
   margin-bottom: 3%;
   @media (max-width: 500px) {
@@ -40,9 +39,12 @@ const TypewriterWrapper = styled.div`
 `;
 
 const NameText = styled.div`
-  p {
-    font-size: 2.5rem;
-  }
+  font-size: 2.5rem;
+`;
+
+const ElementsText = styled.div`
+  margin-top: -30px;
+  font-size: 1.3rem;
 `;
 
 const ImageWrapper = styled.div`
@@ -56,7 +58,10 @@ export default ({ data }) => (
   <Layout>
     <div>
       <NameWrapper>
-        <NameText>Kia ora, I'm Harkanwal</NameText>
+        <NameText>Kia ora, I'm Harkanwal,</NameText>
+      </NameWrapper>
+      <NameWrapper>
+        <ElementsText>co-founder of Elements DataVis Studio.</ElementsText>
       </NameWrapper>
       <TypistWrapper>I do data</TypistWrapper>
       <TypewriterWrapper>
@@ -67,7 +72,7 @@ export default ({ data }) => (
             "analysis.",
             "visualisation.",
             "journalism.",
-            "dreaming."
+            "modelling."
           ]}
         />
       </TypewriterWrapper>

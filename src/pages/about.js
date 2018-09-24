@@ -6,35 +6,64 @@ import styled from "styled-components";
 const AboutContainer = styled.div`
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row-wrap;
   width: 90%;
   max-width: 760px;
   line-height: 2.5;
   h3 {
     font-family: "Montserrat";
   }
-`
+  @media (max-width: 760px) {
+    flex-direction: column;
+  }
+`;
 
 export default ({ data }) => (
   <Layout>
     <AboutContainer>
- 
- <div>
-   <h3>Hi, I'm Harkanwal.</h3>
- </div>
-<div>
-<p>I develop and design data visualisation. I am the co-founder of Elements Data Studio.</p>
-
-<p>I am interested in data visualisation as a central focus for communication and decision-making, rather than as an ancillary part of the process.</p>
-
-<p>I also teach data and visualisation workshops, with separate focus on theoretical and practical. These include workshops for learning data visualisation tools, R and D3.</p>
-
-<p>Previously, I created and headed the first dedicated data journalism department at the New Zealand Herald. This led to the launch of the Herald Insights section and three permanent positions for data journalism in the newsroom.</p>
-
-<p>I worked in the New Zealand media from 2011 to 2017, first at the Waikato Times in Hamilton as a web editor and then for the Stuff site as a data journalist, the first such full time role in the country. I have won the media awards for the best interactive graphics twice and the best multimedia storytelling.</p>
-
-<p>I eventually left working for media, having accomplished more than I thought that was possible, to focus on developing data visualisation products and studying statistics.</p>
-</div>
+      <div>
+        <p>A little bit ‘about’ me.</p>
+        <p>
+          I think data and develop data visualisation to explore complex
+          narratives.
+        </p>
+        <p>
+          My journey to data and visualisation involved traversing three
+          different newsrooms in Aotearoa New Zealand and immigrating from
+          India, back in 2009.
+        </p>
+        <p>
+          Nowadays, I develop and design visualisation at Elements Data Studio
+          as a co-founder.
+        </p>
+        <p>
+          Prior to this, I spent six years working in different newsrooms across
+          New Zealand. Five of those were in a data journalism role, which
+          included the first such role in the country.
+        </p>
+        <p>
+          At the New Zealand Herald, I created and headed the data journalism
+          department which eventually grew to have three full-time roles and
+          also resulted in inception of the Herald Insights - a dedicated data
+          journalism subsite.
+        </p>
+        <p>
+          During that time, I won the NZ media awards for best use of
+          interactive graphics twice and the best innovation in multimedia
+          storytelling for visualising live election results for every meshblock
+          as part of a talented team.
+        </p>
+        <p>
+          A better accomplishment in my own opinion though was finding ways to
+          learn data journalism, programming and visualisation on my own. I am
+          passionate about learning and understanding the world through data.
+        </p>
+        <p>
+          The same passion is what led me to develop data visualisation
+          workshops, which I teach frequently. These include, an introduction to
+          data and visualisation, R programming and D3.js introduction.
+        </p>
+      </div>
     </AboutContainer>
   </Layout>
 );
