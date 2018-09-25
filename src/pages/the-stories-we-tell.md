@@ -1,9 +1,9 @@
 ---
-title: "What's in a name"
-date: "2018-09-15"
+title: "The stories we tell"
+date: "2018-09-20"
 ---
 
-It is just a name.
+We like to tell stories
 
 Programmers will tell you over and over naming is hard.
 

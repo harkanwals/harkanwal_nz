@@ -11,6 +11,10 @@ const TemplateWrapper = styled.div`
   margin-top: 5%;
   justify-content: center;
   flex: row wrap;
+  a {
+    text-decoration: none;
+    color: hsla(10,5%,20%,0.8)
+  }
 `;
 
 const Wrapper = styled.div`

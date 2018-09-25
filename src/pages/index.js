@@ -39,21 +39,14 @@ const TypewriterWrapper = styled.div`
 `;
 
 const NameText = styled.div`
-  font-size: 2.5rem;
-`;
-
-const ImageWrapper = styled.div`
-  display: flex;
-  flex: row;
-  width: 100%;
-  background-color: gray;
+  font-size: 1.5rem;
 `;
 
 export default ({ data }) => (
   <Layout>
     <div>
       <NameWrapper>
-        <NameText>Kia ora, I'm Harkanwal,</NameText>
+        <NameText>Kia ora, I'm Harkanwal.</NameText>
       </NameWrapper>
       <TypistWrapper>I do data</TypistWrapper>
       <TypewriterWrapper>
@@ -74,7 +67,6 @@ export default ({ data }) => (
         showThreeImage={data.budget.childImageSharp}
         showFourImage={data.election.childImageSharp}
       />
-      <ImageWrapper>Oh yeah</ImageWrapper>
     </div>
   </Layout>
 );

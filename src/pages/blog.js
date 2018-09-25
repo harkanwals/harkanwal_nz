@@ -1,40 +1,54 @@
 import React from "react";
-import { graphql } from "gatsby";
-import PostLink from "../components/post-link";
+import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
+import styled from "styled-components";
 
-const BlogPage = ({
-  data: {
-    allMarkdownRemark: { edges }
-  }
-}) => {
-  const Posts = edges
-    .filter(edge => !!edge.node.frontmatter.date)
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />);
+const PostName = styled.p`
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+`;
 
-    return <div>
+const PostExcerpt = styled.div`
+  max-width: 700px;
+`;
+
+
+
+export default ({ data }) => {
+  return (
     <Layout>
-    {Posts}
+      <div>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <div key={node.id}>
+            <Link to={node.fields.slug}>
+              <PostName>{node.frontmatter.title}</PostName>
+              <PostExcerpt>
+                <p>{node.excerpt}</p>
+              </PostExcerpt>
+            </Link>
+          </div>
+        ))}
+      </div>
     </Layout>
-    </div>
+  );
 };
 
-export default BlogPage;
-
 export const pageQuery = graphql`
-    query {
-        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date]}) {
-            edges {
-                node {
-                    id
-                    excerpt(pruneLength: 250)
-                    frontmatter {
-                        date(formatString: "MMMM DD, YY")
-                        
-                        title
-                    }
-                }
-            }
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "MMM, YY")
+          }
+          fields {
+            slug
+          }
+          excerpt(pruneLength: 250)
         }
+      }
     }
-`
+  }
+`;
