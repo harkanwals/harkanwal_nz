@@ -8,7 +8,7 @@ const ShowcaseWrapper = styled.div`
   flex-flow: row no-wrap;
   padding: 1.45rem;
   width: 960px;
-  font-family: "Open Sans";
+  font-family: "Merriweather";
   @media (max-width: 768px) {
     flex-flow: row wrap;
     width: 450px;

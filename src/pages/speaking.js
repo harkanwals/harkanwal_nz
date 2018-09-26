@@ -6,9 +6,7 @@ const SpeakingContainer = styled.div`
   width: 90%;
   max-width: 760px;
   line-height: 2;
-  h3 {
-    font-family: "Montserrat";
-  }
+
   @media (max-width: 760px) {
     flex-direction: column;
   }
@@ -16,39 +14,29 @@ const SpeakingContainer = styled.div`
     color: black;
   }
   p {
-    font-family: "Open Sans";
+    font-family: "Merriweather";
+  }
+
+  iframe {
+    margin-bottom: 50px;
   }
 `;
 
-const TitleContainer = styled.p`
-  font-size: 1.2rem;
-  font-family: "Montserrat";
-  line-height: 1.3;
-`;
-
-const TitleContainer2 = styled.p`
-  font-size: 1.2rem;
-  font-family: "Montserrat";
-  line-height: 1.3;
-  font-weight: bold;
-`;
 
 export default () => (
   <Layout>
     <SpeakingContainer>
       <div>
-        <TitleContainer2>Talks & Interviews </TitleContainer2>
+        <h2>Talks & Interviews </h2>
       </div>
       <div>
-        <p>
-          I am always keen to share and discuss ideas on data.
-        </p>
+        <p>I am always keen to share and discuss ideas on data.</p>
         <p>This page is a subset of talks or interviews over the years.</p>
         <p>
           For any upcoming public talks on data visualisation/jounrlism, I will
           add the slides to this page.
         </p>
-        <TitleContainer>Ihaka Public Lecture at UoA</TitleContainer>
+        <h3>Ihaka Public Lecture at UoA</h3>
         <iframe
           width="100%"
           height="315"
@@ -58,7 +46,7 @@ export default () => (
           allowfullscreen
           title="1"
         />
-        <TitleContainer>National Digital Forum Keynote</TitleContainer>
+        <h3>National Digital Forum Keynote</h3>
         <iframe
           width="100%"
           height="315"
@@ -68,9 +56,9 @@ export default () => (
           allowfullscreen
           title="2"
         />
-        <TitleContainer>
+        <h3>
           Open Data Showcase held at the Parliament
-        </TitleContainer>
+        </h3>
         <iframe
           width="100%"
           height="315"
@@ -80,13 +68,8 @@ export default () => (
           allowfullscreen
           title="3"
         />
-        <TitleContainer2>Interviews</TitleContainer2>
-        <TitleContainer>
-          <a href="https://www.radionz.co.nz/national/programmes/mediawatch/audio/201762824/mining-for-meaning-in-the-age-of-digitised-data">
-            Mining for meaning in the age of data - RadioNZ
-          </a>
-        </TitleContainer>
-        <TitleContainer>NZ newsroom experience at Orcon IRL</TitleContainer>
+       
+        <h3>NZ newsroom experience at Orcon IRL</h3>
         <iframe
           width="100%"
           height="315"
@@ -96,6 +79,12 @@ export default () => (
           allowfullscreen
           title="4"
         />
+
+         <p>
+          <a href="https://www.radionz.co.nz/national/programmes/mediawatch/audio/201762824/mining-for-meaning-in-the-age-of-digitised-data">
+            Mining for meaning in the age of data - RadioNZ
+          </a>
+        </p>
       </div>
     </SpeakingContainer>
   </Layout>

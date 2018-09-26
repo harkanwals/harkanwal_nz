@@ -18,21 +18,17 @@ const AboutContainer = styled.div`
     flex-direction: column;
   }
   p {
-    font-family: "Open Sans";
+    font-family: "Merriweather";
   }
 `;
 
-const TitleContainer = styled.p`
-  font-size: 1.2rem;
-  font-family: "Montserrat";
-  line-height: 1.3;
-`;
+
 
 export default ({ data }) => (
   <Layout>
     <AboutContainer>
       <div>
-        <TitleContainer>A little bit ‘about’ me.</TitleContainer>
+        <h2>A little bit ‘about’ me.</h2>
         <p>
           I think data and develop data visualisation to explore complex
           narratives.
@@ -48,7 +44,7 @@ export default ({ data }) => (
         <p>
           At the New Zealand Herald, I created and headed the data journalism
           department which eventually grew to have three full-time roles and
-          also resulted in inception of the Herald Insights - a dedicated data
+          also resulted in the inception of Herald Insights - a dedicated data
           journalism subsite.
         </p>
         <p>
@@ -56,8 +52,7 @@ export default ({ data }) => (
           and the best innovation in multimedia storytelling, during that time.
         </p>
         <p>
-          A better accomplishment in my own opinion though was finding ways to
-          learn data journalism, programming and visualisation on my own. I am
+          I taught myself programming and visualisation. I am
           passionate about learning and understanding the world through data.
         </p>
         <Img fluid={data.dataTalk.childImageSharp.fluid} />

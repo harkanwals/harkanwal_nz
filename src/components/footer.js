@@ -7,6 +7,7 @@ const FooterContainer = styled.div`
 
   width: 100%;
   padding: 1.45rem 1.0875rem;
+  margin-top: 4%;
   clip-path: polygon(0 calc(70% - 2vw), 100% 0, 100% 100%, 0 100%);
   background: skyblue;
   opacity: 0.7;

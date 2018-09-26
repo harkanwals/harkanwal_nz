@@ -5,8 +5,8 @@ import { Link } from "gatsby";
 const MainH = styled.p`
   display: flex;
   justify-content: flex-start;
-  font-family: "Montserrat";
-  margin-left: 10%;
+  font-family: "Merriweather";
+  margin-left: 3%;
   a {
     color: black;
     text-decoration: none;
@@ -31,7 +31,7 @@ const MainNav = styled.nav`
     justify-content: flex-end;
     li {
       margin-left: 20px;
-      font-family: "Open Sans";
+      font-family: "Merriweather";
       a {
         text-decoration: none;
         color: black;
@@ -53,7 +53,7 @@ const HeaderContainer = styled.div`
   width: 100%;
   flex-direction: row;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
-  @media (min-width: 1080px) {
+  @media (min-width: 860px) {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw));
   }
 `;
