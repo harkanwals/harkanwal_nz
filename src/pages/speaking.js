@@ -15,6 +15,9 @@ const SpeakingContainer = styled.div`
   a {
     color: black;
   }
+  p {
+    font-family: "Open Sans";
+  }
 `;
 
 const TitleContainer = styled.p`
@@ -38,8 +41,7 @@ export default () => (
       </div>
       <div>
         <p>
-          I enjoy talking and promoting data literacy, whether through
-          visualisation or journalism.
+          I am always keen to share and discuss ideas on data.
         </p>
         <p>This page is a subset of talks or interviews over the years.</p>
         <p>

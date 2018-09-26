@@ -17,6 +17,9 @@ const AboutContainer = styled.div`
   @media (max-width: 760px) {
     flex-direction: column;
   }
+  p {
+    font-family: "Open Sans";
+  }
 `;
 
 const TitleContainer = styled.p`

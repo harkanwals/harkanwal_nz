@@ -21,6 +21,7 @@ const TypistWrapper = styled.div`
   font-size: 1.9rem;
   display: flex;
   justify-content: center;
+  font-family: "Montserrat";
   margin-bottom: 5px;
   @media (max-width: 500px) {
     font-size: 1.2rem;

@@ -5,6 +5,7 @@ import { Link } from "gatsby";
 const MainH = styled.p`
   display: flex;
   justify-content: flex-start;
+  font-family: "Montserrat";
   margin-left: 10%;
   a {
     color: black;
@@ -66,9 +67,7 @@ class Header extends React.Component {
             <Link to="/">Home</Link>
           </MainH>
           <ul>
-            <li>
-              <Link to="/blog">Blog</Link>
-            </li>
+           
             <li>
               <Link to="/speaking">Speaking</Link>
             </li>
