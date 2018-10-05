@@ -33,7 +33,7 @@ export default () => (
         <p>I am always keen to share and discuss ideas on data.</p>
         <p>This page is a subset of talks or interviews over the years.</p>
         <p>
-          For any upcoming public talks on data visualisation/jounrlism, I will
+          For any upcoming public talks on data visualisation/journalism, I will
           add the slides to this page.
         </p>
         <h3>Ihaka Public Lecture at UoA</h3>
