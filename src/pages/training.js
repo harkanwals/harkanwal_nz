@@ -42,8 +42,10 @@ export default () => (
         </p>
         <p>Yet, it does not happen always.</p>
         <p>
-          <em>There is a difference between understanding data and communicating
-          that understanding.</em>
+          <em>
+            There is a difference between understanding data and communicating
+            that understanding.
+          </em>
         </p>
         <p>
           Just as in written communication, we use language to persuade and
@@ -59,7 +61,14 @@ export default () => (
           >
             Auckland workshops here
           </a>
-          . If your organisation would like to book mutliple seats, <a href="mailto:harkanwal@elementsdata.studio" rel="noopener noreferrer">please get in touch for discounted pricing</a>.
+          . If your organisation would like to book mutliple seats,{" "}
+          <a
+            href="mailto:harkanwal@elementsdata.studio"
+            rel="noopener noreferrer"
+          >
+            please get in touch for discounted pricing
+          </a>
+          .
         </p>
         <p>
           If you would like to be notified for Wellington workshop registration,
@@ -158,9 +167,23 @@ export default () => (
           <cite>– Marcus Buckland</cite>
         </BlockQuoteWrapper>
 
-        
 
-        <p><a href="https://www.data.govt.nz/blog/data-visualisation-workshop-success/" target="_blank" rel="noopener noreferrer">Read more on OpenDataNZ blog about data visualisation workshop success.</a></p>
+        <BlockQuoteWrapper>
+        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/datavisualization?src=hash&amp;ref_src=twsrc%5Etfw">#datavisualization</a> huge thanks to  <a href="https://twitter.com/opendatanz?ref_src=twsrc%5Etfw">@opendatanz</a> and <a href="https://twitter.com/kamal_hothi?ref_src=twsrc%5Etfw">@kamal_hothi</a> for an excellent immersive workshop.</p>&mdash; Anya Duxfield (@ADux) <a href="https://twitter.com/ADux/status/991572333616742400?ref_src=twsrc%5Etfw">May 2, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        </BlockQuoteWrapper>
+
+        <p>
+          <a
+            href="https://www.data.govt.nz/blog/data-visualisation-workshop-success/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read more on OpenDataNZ blog about data visualisation workshop
+            success.
+          </a>
+        </p>
 
         <br />
         <br />
