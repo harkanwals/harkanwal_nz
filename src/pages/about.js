@@ -22,45 +22,24 @@ const AboutContainer = styled.div`
   }
 `;
 
-
-
 export default ({ data }) => (
   <Layout>
     <AboutContainer>
       <div>
-        <h2>A little bit ‘about’ me.</h2>
+        <h2>About.</h2>
         <p>
           I think data and develop data visualisation to explore complex
           narratives.
         </p>
         <p>
-          My journey to data and visualisation involved traversing three
-          different newsrooms in Aotearoa New Zealand.
+          Currently, I am working as Data Visualisation Engineer at WestpacNZ.
         </p>
         <p>
-          Nowadays, I develop and design visualisation at Elements Data Studio
-          as a co-founder.
+          Previously, I did data journalism in different media outlets in NZ,
+          followed by working as a data visualisation contractor - developing
+          bespoke solutions and teaching data visualisation.
         </p>
-        <p>
-          At the New Zealand Herald, I created and headed the data journalism
-          department which eventually grew to have three full-time roles and
-          also resulted in the inception of Herald Insights - a dedicated data
-          journalism subsite.
-        </p>
-        <p>
-          I won the NZ media awards for the best use of interactive graphics twice
-          and the best innovation in multimedia storytelling, during that time.
-        </p>
-        <p>
-          I taught myself programming and visualisation. I am
-          passionate about learning and understanding the world through data.
-        </p>
-        <Img fluid={data.dataTalk.childImageSharp.fluid} />
-        <p>
-          The same passion is what led me to develop data visualisation
-          workshops, which I teach frequently. These include, an introduction to
-          data and visualisation, R programming and D3.js introduction.
-        </p>
+        <p>I use D3.js, React, R and Python.</p>
       </div>
     </AboutContainer>
   </Layout>
@@ -73,9 +52,9 @@ export const query = graphql`
         title
       }
     }
-    dataTalk: file(relativePath: {regex: "/datatalk.jpg/"}) {
+    dataTalk: file(relativePath: { regex: "/datatalk.jpg/" }) {
       childImageSharp {
-        fluid(maxWidth: 1025, maxHeight: 600){
+        fluid(maxWidth: 1025, maxHeight: 600) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
